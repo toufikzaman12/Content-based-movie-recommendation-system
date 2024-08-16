@@ -1,10 +1,10 @@
 # Content-based-movie-recommendation-system  
 Movie Recommendation System part 1 
 
-# Movie Recommendation System
+
+## Overview
 
 A content-based movie recommendation system that suggests movies similar to a given title based on genres and tags.
-
 ## Features
 
 - **Content-Based Filtering**: Recommends movies by analyzing genres and tags.
@@ -16,14 +16,6 @@ A content-based movie recommendation system that suggests movies similar to a gi
 - **`movies.csv`**: Contains movie titles and genres.
 - **`tags.csv`**: Contains user-generated tags for movies.
 
-
-
-
-# Content-Based Recommendation System
-
-## Overview
-
-A Content-Based Recommendation System suggests items similar to a given item based on the features or attributes of the item. In this case, it recommends movies based on their content, which includes genres and tags.
 
 ## How It Works
 
@@ -86,4 +78,6 @@ def get_content_based_recommendations(title, cosine_sim=cosine_sim):
     sim_scores = sorted(sim_scores, key=lambda x: x[1], reverse=True)
     movie_indices = [i[0] for i in sim_scores[1:11]]
     return movies['title'].iloc[movie_indices]
+print(get_content_based_recommendations('Die Hard (1988)'))  # Example 1
+print(get_content_based_recommendations('Toy Story (1995)'))  # Example 2
 

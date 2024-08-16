@@ -21,6 +21,6 @@ A content-based movie recommendation system that suggests movies similar to a gi
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/movierecommendation.git
+   git clone https://github.com/toufikzaman12/movierecommendation.git
    cd movierecommendation
 pip install pandas scikit-learn

@@ -81,3 +81,21 @@ def get_content_based_recommendations(title, cosine_sim=cosine_sim):
 print(get_content_based_recommendations('Die Hard (1988)'))  # Example 1
 print(get_content_based_recommendations('Toy Story (1995)'))  # Example 2
 
+
+
+## Advantages
+
+- **Personalized Recommendations**: Provides suggestions based on specific movie attributes, making them relevant to the user’s interests.
+- **No User Data Needed**: Operates without needing user ratings or history.
+- **New Items**: Can recommend new movies as soon as they’re added to the dataset.
+
+## Disadvantages
+
+- **Lack of Diversity**: Recommendations may be too similar to the input item, potentially missing out on different genres or styles.
+- **Content Quality**: The system's effectiveness depends on the accuracy and richness of the movie descriptions (genres and tags).
+- **Cold Start Problem**: Struggles with new or niche items that have limited or generic content.
+- **Scalability**: Becomes slower as the number of movies increases due to the complexity of similarity calculations.
+
+## License
+
+This project is licensed under the NIT Sikkim License. For more details, see the [LICENSE](LICENSE) file.

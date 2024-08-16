@@ -81,9 +81,7 @@ def get_content_based_recommendations(title, cosine_sim=cosine_sim):
 print(get_content_based_recommendations('Die Hard (1988)'))  # Example 1
 print(get_content_based_recommendations('Toy Story (1995)'))  # Example 2
 
-
-
-## Advantages
+** Advantages
 
 - **Personalized Recommendations**: Provides suggestions based on specific movie attributes, making them relevant to the user’s interests.
 - **No User Data Needed**: Operates without needing user ratings or history.
